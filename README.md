@@ -28,9 +28,9 @@
 the same time.</div>
 
 
-    <img src="images/a.jpg" width="150"><img src="images/b.jpg" width="150"><img src="images/c.jpg" width="150">
-    <br>
-    <img src="images/results/1.png" width="450">
+<img src="images/a.jpg" width="150"><img src="images/b.jpg" width="150"><img src="images/c.jpg" width="150">
+<br>
+<img src="images/results/1.png" width="450">
 
 
 <div class="description">
