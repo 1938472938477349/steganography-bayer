@@ -48,18 +48,18 @@ Reconstruction: <br>
     <img src="images/weightedRGB/bayer.png" width="250"><br>
     When we reconstruct an image, we just have to interpolate the missing colors.<br><br>
 
-    Stego Image: <br>
-    <img src="images/weightedRGB/results/stegoImage_bayer.png" width="450"><br><br>
+Stego Image: <br>
+<img src="images/weightedRGB/results/stegoImage_bayer.png" width="450"><br><br>
 
-    Reconstruction: <br>
-    <img src="images/weightedRGB/results/recovered_a_bayer.png" width="150"><img src="images/weightedRGB/results/recovered_b_bayer.png" width="150"><img src="images/weightedRGB/results/recovered_c_bayer.png" width="150"><br><br>
+Reconstruction: <br>
+<img src="images/weightedRGB/results/recovered_a_bayer.png" width="150"><img src="images/weightedRGB/results/recovered_b_bayer.png" width="150"><img src="images/weightedRGB/results/recovered_c_bayer.png" width="150"><br><br>
 
-    <br><br>
-    For the second problem, we can somewhat solve it by adding weights to each channel of the stego image: <br><br>
-    Stego Image: <br>
-    <img src="images/weightedRGB/results/stegoImage_bayer_weighted.png" width="450"><br>
-    Two Images are now hidden inside the R and G channel with 0.1 as weight respectively making the stego image blue. It's hard to discern the hidden images visually, but we get
-    a single colored stego image, which does attract curiosity.
+<br><br>
+For the second problem, we can somewhat solve it by adding weights to each channel of the stego image: <br><br>
+Stego Image: <br>
+<img src="images/weightedRGB/results/stegoImage_bayer_weighted.png" width="450"><br>
+Two Images are now hidden inside the R and G channel with 0.1 as weight respectively making the stego image blue. It's hard to discern the hidden images visually, but we get
+a single colored stego image, which does attract curiosity.
     
      
 </div>
