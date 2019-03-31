@@ -27,13 +27,13 @@
 <div class="description">We can create a stego image from 3 images, by using one channel from each image. In this case each of the 3 images acts as cover image and code image at
 the same time.</div>
 
-<center>
+
 <img src="images/a.jpg" width="150"><img src="images/b.jpg" width="150"><img src="images/c.jpg" width="150">
 <br>
 <img src="images/results/1.png" width="450">
 <br>
 <img src="images/results/3.png" width="150"><img src="images/results/4.png" width="150"><img src="images/results/5.png" width="150">
-</center>
+
 
 <div class="description">
     This method is obviously not very smart if your goal is to hide an image within another image. You might even be able to discern the different images visually.
@@ -41,8 +41,7 @@ the same time.</div>
     You can somewhat make it not as obvious by adding weights to each channel of the stego image.
 </div>
 
-<center>
+
 <img src="images/a.jpg" width="150"><img src="images/b.jpg" width="150"><img src="images/c.jpg" width="150">
 <br>
 <img src="images/results/2.png" width="450">
-</center>
