@@ -12,8 +12,8 @@
     <div id="legends">
         <ul>
         <li> Code Image: Image to hide </li>
-        <li>Cover Image: Image used to hide the code image</li>
-        <li>Stego Image: Cover image with the code image embedded</li>
+        <li> Cover Image: Image used to hide the code image</li>
+        <li> Stego Image: Cover image with the code image embedded</li>
         </ul>
     </div>
 </div>
@@ -41,7 +41,9 @@ the same time.</div>
     You can somewhat make it not as obvious by adding weights to each channel of the stego image.
 </div>
 
-
-<img src="images/a.jpg" width="150"><img src="images/b.jpg" width="150"><img src="images/c.jpg" width="150">
-<br>
 <img src="images/results/2.png" width="450">
+
+<div class="description">
+    2 Images are now hidden inside the R and G channel with 0.1 as weight respectively making the stego image blue. It's hard to discern the hidden images visually, but the 
+    stego image is still very "shady". Hence, RGB Merge can be used if you want to make it somewhat obvious that you have hidden something inside the image. 
+</div>

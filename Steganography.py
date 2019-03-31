@@ -4,7 +4,7 @@ import cv2
 class Steganography():
 
     @staticmethod
-    def weightedRGB(img1, img2, img3, w1=0.1, w2=0.1, w3=1):
+    def weightedRGB(img1, img2, img3, w1=1, w2=1, w3=1):
         """
         construct an image from r channel of img1, g of img2 and b of img3 with respective weight
         :param img1: First image
@@ -32,15 +32,12 @@ class Steganography():
     @staticmethod
     def re_weightedRGB(img):
         """
-
-        :param img:
-        :return:
+        reconstruct 3 images from a RGB merged image
+        :param img: Stego image
+        :return: 3 images with 1 channel respectively
         """
         h = img.shape[0]
         w= img.shape[1]
-        #img1 = numpy.zeros((h, w, 1), numpy.uint8)
-        #img2 = numpy.zeros((h, w, 1), numpy.uint8)
-        #img3 = numpy.zeros((h, w, 1), numpy.uint8)
         img_1 = img[:, :, 0]
         img_2 = img[:, :, 1]
         img_3 = img[:, :, 2]
