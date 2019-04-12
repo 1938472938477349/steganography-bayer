@@ -63,33 +63,15 @@ class Steganography():
 
 
 
-# im1 = cv2.imread("images/results/stegoImage_bayer.png", cv2.IMREAD_UNCHANGED)
+
+# im1 = cv2.imread("images/weightedRGB/input/a.jpg", cv2.IMREAD_UNCHANGED)
 # im1 = cv2.cvtColor(im1, cv2.COLOR_BGR2RGB)
-# k,l,m = Steganography.re_weightedRGB(im1)
-#
-# cv2.imwrite("images/results/recovered_a_bayer.png", k)
-# cv2.imwrite("images/results/recovered_b_bayer.png", l)
-# cv2.imwrite("images/results/recovered_c_bayer.png", m)
-# cv2.imshow('image', k)
+# im2 = cv2.imread("images/weightedRGB/input/b.jpg", cv2.IMREAD_UNCHANGED)
+# im2 = cv2.cvtColor(im2, cv2.COLOR_BGR2RGB)
+# im3 = cv2.imread("images/weightedRGB/input/c.jpg", cv2.IMREAD_UNCHANGED)
+# im3 = cv2.cvtColor(im3, cv2.COLOR_BGR2RGB)
+# k = Steganography.weightedRGB(im1, im2, im3, 0.1, 0.1, 1)
+# i1, i2, i3 = Steganography.re_weightedRGB(k)
+# cv2.imshow('image', i1)
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
-
-
-im1 = cv2.imread("images/weightedRGB/input/a.jpg", cv2.IMREAD_UNCHANGED)
-im1 = cv2.cvtColor(im1, cv2.COLOR_BGR2RGB)
-
-im2 = cv2.imread("images/weightedRGB/input/b.jpg", cv2.IMREAD_UNCHANGED)
-im2 = cv2.cvtColor(im2, cv2.COLOR_BGR2RGB)
-
-im3 = cv2.imread("images/weightedRGB/input/c.jpg", cv2.IMREAD_UNCHANGED)
-im3 = cv2.cvtColor(im3, cv2.COLOR_BGR2RGB)
-
-
-k = Steganography.weightedRGB(im1, im2, im3, 0.1, 0.1, 1)
-
-k = cv2.cvtColor(k, cv2.COLOR_RGB2BGR)
-
-cv2.imwrite("images/weightedRGB/results/stegoImage_bayer_weighted.png", k)
-cv2.imshow('image', k)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
