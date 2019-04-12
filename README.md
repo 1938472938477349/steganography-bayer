@@ -25,17 +25,17 @@ Reconstruction: <br>
 
 <div class="description">
 
-    We have merged 3 images into 1 image, but since we only take one channel per image we lose color-information, as the reconstruction shows.
-    To solve this problem, we can use the <a href="https://en.wikipedia.org/wiki/Bayer_filter">Bayer pattern (BG)</a>. Instead of storing one whole channel of an image,
-    we store multiple channel of an image at specific location, giving us the following grid: <br>
-    <img src="images/weightedRGB/bayer.png" width="250"><br>
-    When we reconstruct an image, we just have to interpolate the missing colors.<br><br>
+We have merged 3 images into 1 image, but since we only take one channel per image we lose color-information, as the reconstruction shows.
+To solve this problem, we can use the <a href="https://en.wikipedia.org/wiki/Bayer_filter">Bayer pattern (BG)</a>. Instead of storing one whole channel of an image,
+we store multiple channel of an image at specific location, giving us the following grid: <br>
+<img src="images/weightedRGB/bayer.png" width="250"><br>
+When we reconstruct an image, we just have to interpolate the missing colors.<br><br>
 
-    Stego Image: <br>
-    <img src="images/weightedRGB/results/stegoImage_bayer.png" width="450"><br><br>
+Stego Image: <br>
+<img src="images/weightedRGB/results/stegoImage_bayer.png" width="450"><br><br>
 
-    Reconstruction: <br>
-    <img src="images/weightedRGB/results/recovered_a_bayer.png" width="150"><img src="images/weightedRGB/results/recovered_b_bayer.png" width="150"><img src="images/weightedRGB/results/recovered_c_bayer.png" width="150"><br><br>
+Reconstruction: <br>
+<img src="images/weightedRGB/results/recovered_a_bayer.png" width="150"><img src="images/weightedRGB/results/recovered_b_bayer.png" width="150"><img src="images/weightedRGB/results/recovered_c_bayer.png" width="150"><br><br>
 
-     This method can restore the color but note that we had to interpolate some missing colors, meaning all restored images will have worse quality than before.
+ This method can restore the color but note that we had to interpolate some missing colors, meaning all restored images will have worse quality than before.
 </div>
